@@ -18,19 +18,19 @@ const Navigation = ({ theme, setTheme }) => {
               صفحه اصلی
             </span>
           </NavLink>
-          <NavLink to='/amir.cv/education' className={link => activeLinkHandle(link)}  >
+          <NavLink to='/education' className={link => activeLinkHandle(link)}  >
             <EducationIcon />
             <div className="link-label">
               سوابق تحصیلی
             </div>
           </NavLink>
-          <NavLink to='/amir.cv/portfolios' className={link => activeLinkHandle(link)}  >
+          <NavLink to='/portfolios' className={link => activeLinkHandle(link)}  >
             <FilesInterfaceIcon />
             <span className="link-label">
               نمونه کارها
             </span>
           </NavLink>
-          <NavLink to='/amir.cv/contact-me' className={link => activeLinkHandle(link)}  >
+          <NavLink to='/contact-me' className={link => activeLinkHandle(link)}  >
             <ContactMe />
             <span className="link-label">
               تماس بامن

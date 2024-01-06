@@ -5,8 +5,8 @@ import Records from "./pages/Records/Records";
 
 export const router = [
     { path: '/amir.cv/', element: <Home  /> },
-    { path: '/amir.cv/education', element: <Records /> },
-    { path: '/amir.cv/portfolios', element: <Portfolio /> },
-    { path: '/amir.cv/contact-me', element: <Contact /> },
+    { path: '/education', element: <Records /> },
+    { path: '/portfolios', element: <Portfolio /> },
+    { path: '/contact-me', element: <Contact /> },
 
 ]

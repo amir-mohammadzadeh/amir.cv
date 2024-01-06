@@ -10,7 +10,7 @@ const Records = () => {
       <div className="record-header">
 
         <div className="image_content">
-          <img src="/public/prof.jpg" alt="Profile Image" />
+          <img src="prof.jpg" alt="Profile Image" />
         </div>
 
         <Widget className='name_content'>

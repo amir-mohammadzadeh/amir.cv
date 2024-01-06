@@ -13,7 +13,7 @@ const Home = () => {
                 <div className="flex-grow">
                     <div className="home-header">
                         <div className="profile">
-                            <img src="/prof.jpg" alt="Profile Image" />
+                            <img src="prof.jpg" alt="Profile Image" />
                         </div>
 
                         <Detailes />
