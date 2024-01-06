@@ -1,6 +1,4 @@
-//import './Header.css'
 import { MoonIcon, SunIcon } from '../../assets/Icons'
-
 
 const Header = ({ theme, setTheme }) => {
   return (

@@ -34,15 +34,3 @@ const Social = ({ dispaly, size }) => {
 }
 
 export default Social
-
-/**
- * <FaClipboardList />
- * <FaMapMarkedAlt />   <FaMapMarkerAlt />
- * <FaUserTie />
- * <FaMoon />
- * <FaPaperPlane />
- * <FaPhone />   <FaPhoneAlt />
- * <FaMailBulk />
- * <FaGithub />
- * <FaBattleNet />
- */

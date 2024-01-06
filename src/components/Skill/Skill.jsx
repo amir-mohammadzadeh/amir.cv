@@ -1,4 +1,3 @@
-//import './Skill.css'
 import Widget from '../Widget/Widget'
 import Data from '../../assets/Data.json'
 
@@ -28,53 +27,3 @@ const Skill = () => {
 }
 
 export default Skill
-/*
-                    <li className={items_class}>
-                        <span>
-                            JavaScript
-                        </span>
-                        <span className='dark:text-slate-400 text-gray-700 text-base'>
-                            خوب
-                        </span>
-                    </li>
-                    <li className={items_class}>
-                        <span>
-                            React
-                        </span>
-                        <span className='dark:text-slate-400 text-gray-700 text-base'>
-                            متوسط
-                        </span>
-                    </li>
-                    <li className={items_class}>
-                        <span>
-                            TypeScript
-                        </span>
-                        <span className='dark:text-slate-400 text-gray-700 text-base'>
-                            مبتدی
-                        </span>
-                    </li>
-                    <li className={items_class}>
-                        <span>
-                        Tailwind
-                        </span>
-                        <span className='dark:text-slate-400 text-gray-700 text-base'>
-                            متوسط
-                        </span>
-                    </li>
-                    <li className={items_class}>
-                        <span>
-                            Bootstrap
-                        </span>
-                        <span className='dark:text-slate-400 text-gray-700 text-base'>
-                            متوسط
-                        </span>
-                    </li>
-                    <li className={items_class}>
-                        <span>
-                            Python
-                        </span>
-                        <span className='dark:text-slate-400 text-gray-700 text-base'>
-                            خوب
-                        </span>
-                    </li>
-*/
