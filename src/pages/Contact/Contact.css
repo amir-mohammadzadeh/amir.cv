@@ -1,0 +1,194 @@
+/*.contact {
+    direction: rtl;
+    flex-grow: 1;
+    margin-inline: 1.5rem;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.contect-header {
+    margin-bottom: 2rem;
+    margin-inline-start: 2rem;
+}
+
+.contect-header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.contact_container {
+    display: flex;
+    gap: 1rem;
+}
+*/
+.form-content {
+    width: 62%;
+    margin-inline: auto;
+}
+
+.form-content h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.form-content form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: .85rem;
+}
+
+.inputs-content {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+.form-item {
+    height: 100%;
+}
+
+.form-content form button {
+    background-color: rgb(30, 64, 175);
+}
+
+.form-btn {
+    grid-column: 2 span;
+    width: 10rem;
+    line-height: 2rem;
+    border-radius: .5rem;
+    margin-inline: auto;
+    margin-block: 1rem;
+    color: white;
+}
+
+.form-content form button:hover {
+    transition: .3s;
+    background-color: rgb(9, 48, 174);
+}
+
+.contact-info {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+.contact-box {
+    position: relative;
+    width: 90%;
+}
+
+.box-label {
+    position: absolute;
+    top: -1.2rem;
+    right: calc(50% - 42px);
+    border-radius: 50%;
+    padding: 0.85rem 1.5rem 0 1.5rem;
+    @apply  bg-gray-200 dark:bg-slate-700 
+}
+
+.box-value {
+    margin-block: 2rem .3rem;
+    text-align: center;
+}
+
+/*    Make them Responcive from here :)  */
+@media screen and (max-width: 1385px) {}
+
+@media screen and (max-width: 1300px) {}
+
+
+@media screen and (max-width: 1200px) {
+    .contact_container {
+        flex-direction: column-reverse;
+    }
+
+    .contact-info {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .form-content {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    /*.contact {
+        margin-inline: .5rem;
+        margin-bottom: 1rem;
+        padding-bottom: 2rem;
+    }*/
+
+    .form-content {
+        width: 95%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .form-content form {
+        grid-template-columns: 1fr;
+        gap: .5rem;
+    }
+
+    .form-content form button {
+        grid-column: unset;
+    }
+
+    .contact-info {
+        flex-direction: column;
+
+    }
+
+    .contact-box {
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+
+    }
+
+    .box-label {
+        position: relative;
+        top: 0;
+        right: 0;
+        padding: 0;
+    }
+
+    .box-value {
+        flex-grow: 1;
+        margin-top: .3rem;
+    }
+
+    .inputs-content {
+        gap: .4rem;
+    }
+
+    .form-item {
+        height: 10rem;
+    }
+
+    .contect-header {
+        margin-bottom: 1rem;
+        margin-inline-start: 1.5rem;
+    }
+
+    .contect-header h1 {
+        font-size: 1.3rem;
+    }
+
+}
+
+
+@media screen and (max-width: 576px) {
+    .form-btn {
+        width: 80%;
+    }
+}

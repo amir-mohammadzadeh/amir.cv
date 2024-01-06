@@ -1,0 +1,60 @@
+/*
+.portfolio {
+    flex-grow: 1;
+    direction: rtl;
+    margin-inline: 1.5rem;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.portfolio>h1 {
+    position: sticky;
+    top: 0;
+    background-color: rgb(30, 41, 59);
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    z-index: 2;
+}
+*/
+.portfolio_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.portfolio-card {
+    width: auto;
+    height: 16rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    overflow: hidden;
+}
+
+/*    Make them Responcive from here :)  */
+@media screen and (max-width: 1385px) {}
+
+@media screen and (max-width: 1300px) {}
+
+@media screen and (max-width: 1200px) {
+    .portfolio_container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 768px) {
+    .portfolio_container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .portfolio-card {
+        height: auto;
+    }
+}

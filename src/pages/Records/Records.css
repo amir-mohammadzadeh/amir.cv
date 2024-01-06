@@ -1,0 +1,156 @@
+.recordes{
+    direction: rtl;
+    flex-grow: 1;
+    margin-inline: 2rem ;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.record-header{
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.image_content{
+    flex-shrink: 0;
+    width: 9.5rem;
+    height: 9.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image_content img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.name_content{
+    flex-basis: 50%;
+}
+
+.name_content h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: .85rem;
+}
+
+/**********************************
+
+.records_container{
+    display: flex;
+    gap: 1rem;
+}
+
+.record-item{
+    padding-block: .5rem 1.5rem;
+    padding-inline: 1rem;
+}
+.line{
+    border-color: gold;
+    border-width: 1px;
+}
+
+.record-item h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(205, 227, 255);
+}
+.record-item div{
+    color: gold;
+    margin-block: .5rem;
+}
+.record-item section{
+    display: flex;
+}
+.record-item span{
+    margin-inline-start: 1rem;
+    padding-inline-start: 1rem;
+    border-right: 3px solid goldenrod;
+}
+
+.left-record{
+    display: flex;
+    gap: 1rem;
+}
+*/
+
+
+/*    Make them Responcive from here :)  */
+
+
+@media screen and (max-width: 1385px) {
+    
+}
+
+@media screen and (max-width: 1300px) {
+    
+    
+}
+
+@media screen and (max-width: 1200px) {
+   
+}
+
+
+@media screen and (max-width: 992px) {
+    .recordes{
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+    }
+    .name_content{
+        flex-basis: 50%;
+    }
+    .name_content h1{
+        font-size: 2rem;
+    }
+/*
+    .records_container{
+        flex-direction: column;
+    }*/
+}
+
+
+@media screen and (max-width: 768px) {
+    .record-header{
+        flex-wrap: wrap;
+    }
+    .name_content{
+        flex-grow: 1;
+    }
+    .name_content h1{
+        font-size: 1.5rem;
+    }
+    .image_content{
+        width: 6rem;
+        height: 6rem;
+    }
+/*
+    .record-item h5{
+        font-size: 1.25rem;
+    }*/
+}
+
+
+@media screen and (max-width: 576px) {
+    .name_content h1{
+        font-size: 1.1rem;
+    }
+    .name_content span{
+        font-size: 1rem;
+    }
+    .image_content{
+        width: 5rem;
+        height: 5rem;
+    }
+/*
+    .record-item section{
+        flex-direction: column;
+        gap: .5rem;
+    }
+    .record-item span{
+        margin: 0;
+        padding: 0;
+        border-right: 0;
+    }*/
+}

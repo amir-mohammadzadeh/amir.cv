@@ -1,0 +1,30 @@
+/*  Skills  */
+.skill{
+    width: 100%;
+}
+.skill-content{
+    padding-block: 1rem;
+}
+.skill h3{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.skill-items{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+.item-key{
+
+}
+.item-value{
+    
+}
+.skill-items:hover{
+    transition: .3s;
+    background-color: #3c5064;;
+}

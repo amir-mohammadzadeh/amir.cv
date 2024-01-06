@@ -1,0 +1,99 @@
+.Detailes{
+    @apply flex justify-center gap-2
+}
+.item{
+    line-height: 3rem;
+    @apply py-2 px-4 flex justify-between
+}
+
+@media screen and (max-width: 1300px) {
+    .Detailes{
+        flex-direction: column;
+    }
+    .Detailes ul:nth-child(1){
+        border-left-width: 0;
+    }
+    .item{
+        line-height: 1.15rem;
+    }
+    .item:hover{
+        @apply dark:bg-slate-600 bg-gray-300
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .Detailes{
+        flex-direction: row;
+    }
+    .Detailes ul:nth-child(1){
+        border-left-width: 2px ;
+    }
+    .item{
+        line-height: 3rem;
+    }
+    .item:hover{
+        @apply dark:bg-slate-700 bg-gray-200
+    }
+}
+
+@media screen and (max-width: 1085px) {
+    .Detailes{
+        flex-direction: column;
+    }
+    .Detailes ul:nth-child(1){
+        border-left-width: 0;
+    }
+    .item{
+        line-height: 1.15rem;
+    }
+    .item:hover{
+        @apply dark:bg-slate-600 bg-gray-300
+    }
+}
+
+@media screen and (max-width: 448px) {
+    .item{
+        flex-direction: column;
+        margin-bottom: .2rem;
+        gap: .5rem;
+    }
+    .item span:nth-child(2){
+        align-self: flex-end;
+    }
+}
+
+
+/*  Profile Information  
+.info{
+    flex-grow: 1;
+}
+
+.name-job{
+ text-align: center;
+ margin-bottom: 2rem;
+ display: flex;
+ align-items: center;
+}
+.name-job h1{
+    flex:  1 0 50%;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.name-job span{
+    font-size: 1.3rem;
+    flex: 1 0 50%;
+}
+
+.Detailes{
+    display:flex ;
+    justify-content: center;
+    gap: .5rem;
+}
+.more-detailes ul{
+    width: 100%;
+}
+.more-detailes ul:nth-child(1){
+    padding-inline-end: .5rem;
+    border-left: 2px solid gold;
+}
+*/
