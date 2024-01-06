@@ -8,12 +8,12 @@ import Social from '../../components/Social/Social'
 const Home = () => {
 
     return (
-        <main style={style} className="main">
+        <main className="main">
             <div dir='rtl' className="home-container">
                 <div className="flex-grow">
                     <div className="home-header">
                         <div className="profile">
-                            <img src="/public/prof.jpg" alt="Profile Image" />
+                            <img src="/prof.jpg" alt="Profile Image" />
                         </div>
 
                         <Detailes />

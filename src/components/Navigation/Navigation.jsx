@@ -12,25 +12,25 @@ const Navigation = ({ theme, setTheme }) => {
     <nav className="navbar ">
       <div className="navbar-container">
         <div className="nav-1">
-          <NavLink to='/' className={link => activeLinkHandle(link)} >
+          <NavLink to='/amir.cv/' className={link => activeLinkHandle(link)} >
             <HomeIcon />
             <span className="link-label">
               صفحه اصلی
             </span>
           </NavLink>
-          <NavLink to='/education' className={link => activeLinkHandle(link)}  >
+          <NavLink to='/amir.cv/education' className={link => activeLinkHandle(link)}  >
             <EducationIcon />
             <div className="link-label">
               سوابق تحصیلی
             </div>
           </NavLink>
-          <NavLink to='/portfolios' className={link => activeLinkHandle(link)}  >
+          <NavLink to='/amir.cv/portfolios' className={link => activeLinkHandle(link)}  >
             <FilesInterfaceIcon />
             <span className="link-label">
               نمونه کارها
             </span>
           </NavLink>
-          <NavLink to='/contact-me' className={link => activeLinkHandle(link)}  >
+          <NavLink to='/amir.cv/contact-me' className={link => activeLinkHandle(link)}  >
             <ContactMe />
             <span className="link-label">
               تماس بامن
