@@ -3,7 +3,7 @@ import Data from '../../assets/Data.json'
 
 const Aboute = () => {
     return (
-        <Widget>
+        <Widget className='h-fullj'>
             <h3 className='text-2xl font-semibold'>
                 درباره من
             </h3>

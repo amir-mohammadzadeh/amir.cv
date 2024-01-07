@@ -23,7 +23,7 @@
   }
   
   body{
-    @apply dark:bg-slate-800 dark:text-slate-50 bg-gray-400
+    @apply dark:bg-slate-800 dark:text-slate-50 bg-gray-400 overflow-hidden
   }
   h1{
     @apply text-4xl font-semibold pb-4 md:text-2xl dark:text-white ;
@@ -32,6 +32,6 @@
     scrollbar-width: none;
   }
   .main{
-    @apply flex-grow mx-8 overflow-y-auto scrollbar-none lg:mb-8 lg:pb-4 duration-1000
+    @apply flex-grow w-full h-full overflow-y-auto scrollbar-none lg:px-5
   }
 }

@@ -8,7 +8,7 @@ import Social from '../../components/Social/Social'
 const Home = () => {
 
     return (
-        <main className="main">
+        
             <div dir='rtl' className="home-container">
                 <div className="flex-grow">
                     <div className="home-header">
@@ -27,7 +27,7 @@ const Home = () => {
                     </Widget>
                 </div>
             </div>
-        </main>
+        
     )
 }
 
