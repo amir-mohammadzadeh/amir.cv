@@ -1,4 +1,4 @@
-.App_container{
+.App_container {
     direction: rtl;
     background-color: rgb(182, 184, 143);
     height: 100vh;
@@ -8,13 +8,13 @@
     gap: 1rem;
 }
 
-.sidbar{
+.sidbar {
     background-color: rgba(137, 43, 226, 0.571);
     width: 4rem;
     height: 100%;
 }
 
-.mains{
+.mains {
     background-color: rgba(0, 222, 0, 0.639);
     flex-grow: 1;
     width: 100%;
@@ -23,7 +23,7 @@
 }
 
 
-.mains ul li{
+.mains ul li {
     width: 50%;
     transition: background-color 2s ease;
     color: black;
@@ -33,7 +33,7 @@
     margin-bottom: .25rem;
 }
 
-.H_container{
+.H_container {
     background-color: rgba(247, 242, 253, 0);
     width: 100%;
     height: 100%;
@@ -43,7 +43,7 @@
     gap: 1rem;
 }
 
-.I_content{
+.I_content {
     order: 1;
     background-color: coral;
     width: 100%;
@@ -53,103 +53,109 @@
     border-radius: 1rem;
 }
 
-.I_content img{
+.I_content img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-.D_content{
+.D_content {
     order: 2;
     background-color: chartreuse;
 }
 
-.A_content{
+.A_content {
     order: 4;
     background-color: deeppink;
     grid-column: 2 span / 1 span;
 }
 
-.S_content{
+.S_content {
     order: 3;
     background-color: rgb(217, 47, 255);
     grid-row: 3 span / 3 span;
-    
+
 }
 
 
 @media screen and (min-width: 1537px) {
-    .H_container{
+    .H_container {
         grid-template-columns: 1fr 1.5fr 1fr;
     }
 }
 
 @media screen and (max-width: 1300) {
-    .H_container{
+    .H_container {
         grid-template-columns: 18rem 1.5fr 22rem;
     }
-    
+
 }
 
 @media screen and (max-width: 1200px) {
-    .H_container{
-        grid-template-columns: 18rem 1.5fr ;
+    .H_container {
+        grid-template-columns: 18rem 1.5fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
-    .A_content{
+
+    .A_content {
         order: 3;
     }
-    .S_content{
+
+    .S_content {
         order: 4;
         width: 100%;
         grid-row: unset;
         grid-column: 2 span / 1 span;
     }
-    
+
 }
 
 
 @media screen and (max-width: 992px) {
-    .App_container{
+    .App_container {
         flex-direction: column-reverse;
         padding: 1rem 0 0 0;
     }
-    .sidbar{
+
+    .sidbar {
         width: 100%;
         height: 4rem;
     }
-    .mains{
+
+    .mains {
         padding-top: 0rem;
         padding-inline: 1.25rem;
     }
-    .H_container{
+
+    .H_container {
         height: auto;
     }
 }
 
 
 @media screen and (max-width: 768px) {
-    .H_container{
-        grid-template-columns: 1fr ;
-        grid-template-rows: 1fr 1fr 1fr 1fr ;
+    .H_container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr;
     }
-    .A_content{
-        grid-column: auto ;
+
+    .A_content {
+        grid-column: auto;
     }
-    .S_content{
-        grid-column: auto ;
+
+    .S_content {
+        grid-column: auto;
     }
-    .I_content{
+
+    .I_content {
         max-width: 22rem;
         max-height: 22rem;
-        min-height: auto;
+        min-height: unset;
         height: auto;
         width: auto;
         margin-inline: auto;
     }
 }
 
-@media screen and (max-width: 576px) {
-    
-}
+@media screen and (max-width: 576px) {}

@@ -1,23 +1,25 @@
 import Widget from '../Widget/Widget'
 import Data from '../../assets/Data.json'
+import { IconTest } from '../../assets/Icons'
+import Stars from '../Stars/Stars'
 
 const Skill = () => {
     //const items_class = 'flex justify-between flex-row-reverse items-center text-xl leading-9 duration-300 hover:bg-gray-300 dark:hover:bg-slate-600'
     return (
-        <Widget className="w-full">
+        <Widget className="order-3 w-full row-span-3 xl:order-4 xl:row-auto xl:col-span-full md:col-auto">
             <h3 className='text-center text-2xl font-semibold'>
                 مهارت ها
             </h3>
             <div className="py-4">
                 <ul>
                     {Data.skills.map(skill =>
-                        <li key={skill.id} className="flex justify-between flex-row-reverse items-center text-xl leading-9 duration-300 hover:bg-gray-300 dark:hover:bg-slate-600">
+                        <li key={skill.id} className="flex justify-between flex-row-reverse items-center text-xl my-4 leading-9 duration-300 hover:bg-gray-300 dark:hover:bg-slate-600">
                             <span>
                                 {skill.skill}
                             </span>
-                            <span className='dark:text-slate-400 text-gray-700 text-base'>
-                                {skill.value}
-                            </span>
+                            
+                            <Stars value={skill.value} />
+                            
                         </li>
                     )}
                 </ul>

@@ -12,13 +12,13 @@
         "linkedin":"https://www.linkedin.com/in/amir-mohammadzadeh-23b864291"
     },
     "skills":[
-        {"id":1 , "skill":"HTML / CSS" , "value":"خوب"},
-        {"id":2 , "skill":"JavaScript" , "value":"خوب"},
-        {"id":3 , "skill":"react" , "value":"متوسط"},
-        {"id":4 , "skill":"TypeScript" , "value":"مبتدی"},
-        {"id":5 , "skill":"Tailwind" , "value":"متوسط"},
-        {"id":6 , "skill":"Bootstrap" , "value":"متوسط"},
-        {"id":7 , "skill":"python" , "value":"خوب"}
+        {"id":1 , "skill":"HTML / CSS" , "value":3.5},
+        {"id":2 , "skill":"JavaScript" , "value":3.5},
+        {"id":3 , "skill":"react" , "value":3},
+        {"id":4 , "skill":"TypeScript" , "value":1},
+        {"id":5 , "skill":"Tailwind" , "value":2.5},
+        {"id":6 , "skill":"Bootstrap" , "value":2.5},
+        {"id":7 , "skill":"python" , "value":3.5}
     ],
     "aboutMe":"من با دو سال تجربه خودآموز در برنامه نویسی، به عنوان یک عاشق برنامه نویسی با تمرکز بر رشد و توسعه مهارت ها هستم. تجربیات گذشته ام در کار تیمی به من کمک کرده اند تا توانایی قوی در این زمینه داشته باشم و همچنین توانایی برقراری روابط مثبت با همکارانم را دارم. هدف اصلی من، افزایش مهارت های خود با حضور در یک محیط کاری پویا و پرچالش است تا بتوانم توانمندی های حرفه ای خود را افزایش داده و به ارزش تیمم اضافه کنم. من به دنبال یادگیری مفاهیم و تکنولوژی های جدید همیشه باقی میمانم و تعهد دارم که به دستاوردهای تیم و سازمانم بیفزایم.",
     "records":{

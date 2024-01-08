@@ -4,7 +4,7 @@ import Data from '../../assets/Data.json'
 
 const Detailes = () => {
     return (
-        <Widget className="flex-grow">
+        <Widget className="order-2">
             <div className="text-center mb-8 lg:mb-4 flex items-center sm:flex-col sm:gap-4 sm:mb-6">
                 <h1 className='basis-1/2 flex-grow text-4xl font-semibold 2xl:text-3xl '>
                     {Data.Detailes.name}

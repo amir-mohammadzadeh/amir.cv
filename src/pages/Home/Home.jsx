@@ -8,26 +8,16 @@ import Social from '../../components/Social/Social'
 const Home = () => {
 
     return (
-        
-            <div dir='rtl' className="home-container">
-                <div className="flex-grow">
-                    <div className="home-header">
-                        <div className="profile">
-                            <img src="prof.jpg" alt="Profile Image" />
-                        </div>
 
-                        <Detailes />
-                    </div>
-                    <Aboute />
-                </div>
-                <div className="home_left-side">
-                    <Skill />
-                    <Widget className="home_socails">
-                        <Social dispaly='grid' size='50' />
-                    </Widget>
-                </div>
+        <div dir='rtl' className="Home_container">
+            <div className="Image_content">
+                <img src="prof.jpg" alt="Profile Image" />
             </div>
-        
+            <Detailes />
+            <Skill />
+            <Aboute />
+        </div>
+
     )
 }
 

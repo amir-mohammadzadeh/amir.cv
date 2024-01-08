@@ -4,6 +4,31 @@
     display: flex;
     gap: 1rem;
 }
+.Home_container{
+    background-color: rgba(247, 242, 253, 0);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 18rem 1.5fr 22rem;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+.Image_content{
+    order: 1;
+    background-color: coral;
+    width: 100%;
+    height: 100%;
+    min-height: 22rem;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.Image_content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
 .home-header {
     margin-bottom: 1rem;
@@ -42,6 +67,12 @@
 }
 
 /*    Make them Responcive from here :)  */
+@media screen and (min-width: 1537px) {
+    .Home_container{
+        grid-template-columns: 1fr 1.5fr 1fr;
+    }
+}
+
 @media screen and (max-width: 1385px) {
     .home_left-side {
         flex: 0 0 17rem;
@@ -49,14 +80,13 @@
 }
 
 @media screen and (max-width: 1300px) {
-    .home_left-side {
-        flex: 0 0 20rem;
-    }
+    
 }
 
 @media screen and (max-width: 1200px) {
-    .home-container {
-        flex-direction: column;
+    .Home_container{
+        grid-template-columns: 18rem 1.5fr ;
+        grid-template-rows: 1fr 1fr 1fr;
     }
 
     .home_left-side {
@@ -65,8 +95,9 @@
 }
 
 @media screen and (max-width: 992px) {
-    .home-main {
-        margin-bottom: 2rem;
+    .Home_container{
+        height: auto;
+        grid-template-rows: auto 1fr 1fr;
     }
 
     .profile {
@@ -76,13 +107,18 @@
 }
 
 @media screen and (max-width: 768px) {
-    .home-header {
-        flex-direction: column;
+    .Home_container{
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto 1fr 1fr 1fr ;
     }
 
-    .profile {
+    .Image_content{
         max-width: 22rem;
-        height: 22rem;
+        max-height: 22rem;
+        min-height: unset;
+        height: auto;
+        width: auto;
+        margin-inline: auto;
     }
 
     .home_socails {

@@ -6,7 +6,7 @@
     @apply py-2 px-4 flex justify-between
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1355px) {
     .Detailes{
         flex-direction: column;
     }
