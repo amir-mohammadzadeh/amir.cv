@@ -14,7 +14,7 @@
         border-left-width: 0;
     }
     .item{
-        line-height: 1.15rem;
+        line-height: 1.5rem;
     }
     .item:hover{
         @apply dark:bg-slate-600 bg-gray-300
@@ -44,17 +44,18 @@
         border-left-width: 0;
     }
     .item{
-        line-height: 1.15rem;
+        line-height: 1.85rem;
     }
     .item:hover{
         @apply dark:bg-slate-600 bg-gray-300
     }
 }
 
-@media screen and (max-width: 448px) {
+@media screen and (max-width: 350px) {
     .item{
+        line-height: 1rem;
         flex-direction: column;
-        margin-bottom: .2rem;
+        margin-bottom: .35rem;
         gap: .5rem;
     }
     .item span:nth-child(2){

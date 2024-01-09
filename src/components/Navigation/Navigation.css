@@ -73,7 +73,7 @@
     border-right: 0;
 }
 
-@keyframes test {
+@keyframes show-label {
     40% {
         visibility: visible;
         opacity: 0;
@@ -100,19 +100,21 @@
 
 @media screen and (min-width: 992px) {
     .navbar-icon:hover>.link-label {
-        animation: .1s test forwards;
+        animation: .1s show-label forwards;
     }
 }
 
 @media screen and (max-width: 992px) {
     .navbar {
+        position: sticky;
+        bottom: 0;
         width: 100%;
         height: 4rem;
-        padding-bottom: .5rem;
+        padding-bottom: .25rem;
     }
 
     .navbar-container {
-        flex-direction: row-reverse;
+        flex-direction: row;
         width: 100%;
     }
 
