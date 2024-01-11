@@ -1,53 +1,48 @@
-import {  useState } from 'react'
 import './PortfolioCard.css'
+import { DiscriptionIcon, SourceCodeIcon } from '../../assets/Icons'
+import React, { useState } from 'react'
 
-const PortfolioCard = ({ title, languages, discription, linke, sorscode }) => {
-    const [readMore, setReadMore] = useState(false)
+const PortfolioCard = ({ n, title, languages, discription, linke, sorscode,image }) => {
 
+    const [openDiscription, setOpenDiscription] = useState(false)
     return (
-        <>
-            <h3 className='text-2xl font-semibold sm:text-xl'>
-                {title}
-            </h3>
-            <div className="my-4 font-medium text-red-800 dark:text-yellow-500">
-                {languages.join(' / ')}
+        <div className="Card_content">
+            <div className="Portfolio_image">
+                <img src={`/amir.cv/portfolios_image/${image}`} alt="" />
             </div>
-
-            <p className='Description-1'>
-                {discription.length >= 100 ?
-                    <>
-                        {discription.substring(0, 100)}
-                        <span onClick={() => setReadMore(p => !p)}>
-                            Read More
-                        </span>
-                    </>
-                    : discription
-                }
-            </p>
-            {readMore &&
-                <div className="Description-2">
-                    <p>
+            <div className="Portfolio-details">
+                <h3>
+                    {title}
+                </h3>
+                <span>
+                    {languages.join(' / ')}
+                </span>
+            </div>
+            <div className="Portfolio-Card_Buttons">
+                <button className='pc-btn-1 ' onClick={() => setOpenDiscription(true)}>
+                    <DiscriptionIcon size='25' className='text-gray-600 dark:text-slate-300' />
+                    توضیحات
+                </button>
+                <a className='pc-btn-2 dark:text-green-400 sm:dark:text-white' href={linke} target='_blank'>
+                    نمایش
+                </a>
+                <a className='pc-btn-3 dark:text-green-100' href={sorscode} target='_blank'>
+                    <SourceCodeIcon size='28' />
+                    <label> سورس کد </label>
+                </a>
+            </div>
+            {openDiscription &&
+                <div className="Dis_content">
+                    <p className="Dis_textbox">
                         {discription}
                     </p>
-                    <span onClick={() => setReadMore(p => !p)}>
+                    <button className='Dis_close' onClick={() => setOpenDiscription(false)}>
                         Back
-                    </span>
+                    </button>
                 </div>
             }
 
-            <div className="flex-grow flex justify-between items-end sm:mt-2">
-                <a
-                    href={linke} target='_blank'
-                    className='text-xl duration-300 text-blue-600 hover:text-blue-800 dark:text-green-500 dark:hover:text-green-300'>
-                    نمایش
-                </a>
-                <a
-                    href={sorscode} target='_blank'
-                    className='text-xl duration-300  text-sky-600 hover:text-sky-800 dark:text-slate-300 dark:hover:text-green-200'>
-                    سورس کد
-                </a>
-            </div>
-        </>
+        </div>
     )
 }
 

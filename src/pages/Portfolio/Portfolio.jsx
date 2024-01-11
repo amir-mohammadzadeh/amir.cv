@@ -1,23 +1,47 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCards, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/effect-cards';
+import 'swiper/css/navigation';
 import './Portfolio.css'
-import Widget from '../../components/Widget/Widget'
-import PortfolioCard from '../../components/PortfolioCard/PortfolioCard'
+import PortfolioCard from '../../components/PortfolioCard/PortfolioCard';
 import Data from '../../assets/Data.json'
 
 const Portfolio = () => {
-
     return (
-        <main dir='rtl' className="main">
-            <h1 className='sticky top-0 z-10 dark:bg-slate-800 bg-gray-400'>
-                نمونه کارها
-            </h1>
-            <div className="portfolio_container">
-                {Data.portfolios.map(item =>
-                    <Widget key={item.id} className='portfolio-card'>
-                        <PortfolioCard {...item} />
-                    </Widget>
-                )}
+        <>
+            <div className="M_container">
+                <h1 className='self-center lg:mt-10'>
+                    نمونه کارها
+                </h1>
+                <div className="Swiper_Container">
+
+                    <Swiper
+                        effect={'cards'}
+                        grabCursor={true}
+                        modules={[EffectCards, Navigation]}
+                        className="mySwiper"
+                        navigation={
+                            {
+                                nextEl: '.swiper-button-next',
+                                prevEl: '.swiper-button-prev',
+                                clickable: true
+                            }
+                        }
+                    >
+                        {Data.portfolios.map(item => <SwiperSlide key={item.id}>    <PortfolioCard {...item} />    </SwiperSlide>)}
+                        
+                        <div className="slider-controler md:hidden">
+                            <div className="swiper-button-prev dark:text-yellow-300">
+                            </div>
+                            <div className="swiper-button-next dark:text-yellow-300 ">
+                            </div>
+                        </div>
+                    </Swiper>
+                </div>
             </div>
-        </main>
+
+        </>
     )
 }
 
