@@ -12,7 +12,7 @@ const Navigation = ({ theme, setTheme }) => {
     <nav className="navbar ">
       <div className="navbar-container">
         <div className="nav-1">
-          <NavLink to='/amir.cv/' className={link => activeLinkHandle(link)} >
+          <NavLink to='/' className={link => activeLinkHandle(link)} >
             <HomeIcon />
             <span className="link-label">
               صفحه اصلی
