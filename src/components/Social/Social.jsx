@@ -1,33 +1,27 @@
-import './Social.css'
-import { EmailIcon, GithubIcon, InstagramIcon, LinkedinIcon } from '../../assets/Icons';
-import { Link } from 'react-router-dom';
+import { GithubIcon, InstagramIcon, LinkedinIcon } from '../../assets/Icons';
 import Data from '../../assets/Data.json'
 
-const Social = ({ dispaly, size }) => {
-    let content;
-
-    dispaly == 'grid' ? content = 'grid_content' : content = 'flex_content';
+const Social = ({ iconSize }) => {
+    let li_class = 'text-center cursor-pointer duration-300 dark:text-slate-400 text-gray-600 hover:text-blue-600 hover:dark:text-yellow-300';
 
     return (
-        <ul className={content}>
-            <li>
+        <ul className='flex justify-center gap-8'>
+            <li className={li_class}>
                 <a href={Data.Detailes.github} target='_blank'>
-                    <GithubIcon size={size} />
+                    <GithubIcon size={iconSize} />
                 </a>
             </li>
-            <li>
+            <li className={li_class}>
                 <a href={Data.Detailes.linkedin} target='_blank'>
-                    <LinkedinIcon size={size} />
+                    <LinkedinIcon size={iconSize} />
                 </a>
             </li>
-            <li>
-                <InstagramIcon size={size} />
+            <li className={li_class}>
+                <a href="https://instagram.com/mr.code_98?utm_medium=copy_link" target='_blank'>
+                    <InstagramIcon size={iconSize} />
+                </a>
             </li>
-            <li>
-                <Link to='/contact-me'>
-                    <EmailIcon size={size} />
-                </Link>
-            </li>
+
         </ul>
 
     )

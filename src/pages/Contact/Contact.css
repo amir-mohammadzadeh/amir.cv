@@ -51,7 +51,6 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    margin-top: 1.5rem;
     width: 100%;
 }
 
@@ -66,7 +65,7 @@
     right: calc(50% - 42px);
     border-radius: 50%;
     padding: 0.85rem 1.5rem 0 1.5rem;
-    @apply  bg-gray-200 dark:bg-slate-700 
+    @apply bg-gray-200 dark:bg-slate-700 xl:dark:bg-sky-700 xl:bg-gray-300 md:dark:bg-slate-700 md:dark:text-indigo-400
 }
 
 .box-value {
@@ -75,10 +74,6 @@
 }
 
 /*    Make them Responcive from here :)  */
-@media screen and (max-width: 1385px) {}
-
-@media screen and (max-width: 1300px) {}
-
 
 @media screen and (max-width: 1200px) {
     .contact_container {
@@ -86,8 +81,22 @@
     }
 
     .contact-info {
-        flex-direction: row;
-        gap: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        row-gap: 1rem;
+    }
+
+    .box-label {
+        top: 0;
+        right: 0;
+        border-radius: 0 1rem 0 100%;
+        padding: .5rem .5rem 1.25rem 1.25rem;
+
+    }
+
+    .box-value {
+        margin-block: .85rem;
     }
 
     .form-content {
@@ -103,7 +112,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .form-content form {
         grid-template-columns: 1fr;
         gap: .5rem;
@@ -114,7 +123,7 @@
     }
 
     .contact-info {
-        flex-direction: column;
+        grid-template-columns: 1fr;
 
     }
 
@@ -123,13 +132,10 @@
         display: flex;
         align-items: center;
         gap: .5rem;
-
     }
 
     .box-label {
         position: relative;
-        top: 0;
-        right: 0;
         padding: 0;
     }
 

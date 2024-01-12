@@ -1,12 +1,13 @@
 import './Contact.css'
 import Widget from '../../components/Widget/Widget'
 import { Input, TextArea } from '../../components/Input/Input'
-import { EmailIcon, LocationIcon, TelephoneIcon } from '../../assets/Icons'
+import { EmailIcon, LocationIcon, SocialIcon, TelephoneIcon } from '../../assets/Icons'
 import Data from '../../assets/Data.json'
+import Social from '../../components/Social/Social'
 
 const Contact = () => {
   return (
-    <main dir='rtl' className="main">
+    <>
       <div className="mx-8 mb-4 md:mb-0">
         <h1>
           تماس بامن
@@ -62,9 +63,17 @@ const Contact = () => {
               {Data.Detailes.address.ostan}، {Data.Detailes.address.ads}
             </div>
           </Widget>
+          <Widget className='contact-box'>
+            <div className='box-label'>
+              <SocialIcon size='30' />
+            </div>
+            <div className='box-value'>
+              <Social iconSize='32' />
+            </div>
+          </Widget>
         </div>
       </div>
-    </main>
+    </>
   )
 }
 
