@@ -5,8 +5,8 @@ import Data from '../../assets/Data.json'
 const Records = () => {
   return (
     <>
-      <div className="h-full">
-        <Widget className='w-1/2 h-2/3 lg:w-full'>
+      <div>
+        <Widget className='w-1/2 lg:w-full'>
           <h3 className='text-3xl md:text-2xl font-semibold mb-3 '>
             سوابق تحصیلی
           </h3>

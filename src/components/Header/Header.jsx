@@ -2,7 +2,7 @@ import { MoonIcon, SunIcon } from '../../assets/Icons'
 
 const Header = ({ theme, setTheme }) => {
   return (
-    <header className='w-full h-16 bg-slate-600 dark:bg-slate-900 hidden md:block'>
+    <header dir='ltr' className='w-full h-16 bg-slate-600 dark:bg-slate-900 hidden md:block'>
 
       <div className="w-ful h-full py-4 px-8 flex items-center justify-between">
         <div

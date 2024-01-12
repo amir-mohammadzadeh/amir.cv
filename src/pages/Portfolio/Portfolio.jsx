@@ -11,7 +11,7 @@ const Portfolio = () => {
     return (
         <>
             <div className="M_container">
-                <h1 className='self-center lg:mt-10'>
+                <h1 className='self-center lg:mt-8 md:mt-0'>
                     نمونه کارها
                 </h1>
                 <div className="Swiper_Container">
