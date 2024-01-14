@@ -12,7 +12,7 @@ const ToggleContent = () => {
             {open &&
                 <div className='toggle_container'>
 
-                    <a href="" className='toggle-icon'>
+                    <a href='/amir.cv/AmirMohammadzadeh_cv.pdf' download='Amir-Mohammadzadeh_CV' className='toggle-icon'>
                         <DownloadIcon />
                     </a>
 
