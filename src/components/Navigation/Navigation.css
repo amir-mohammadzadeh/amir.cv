@@ -21,17 +21,7 @@
 .link-label {
     @apply bg-gray-300 border-black dark:bg-slate-700 before:bg-gray-300 dark:before:bg-slate-700;
 }
-/*
-.navbar {
-    position: sticky;
-    right: 0;
-    flex: 0 0 4rem;
-    height: 100%;
-    margin-block: auto;
-    margin-inline-end: 1rem;
-    z-index: 3;
-}
-*/
+
 .navbar{
     width: 4rem;
     height: 100%;
@@ -99,6 +89,7 @@
     border-bottom-left-radius: 100%;
 }
 
+
 @media screen and (min-width: 992px) {
     .link-active{
         display: block;
@@ -132,12 +123,15 @@
         width: auto;
         height: 100%;
     }
-
 }
 
 @media screen and (max-width: 768px) {
     .navbar{
         padding-bottom: 0;
+    }
+    .navbar-icon {
+        width: 2.25rem;
+        height: 2.25rem;
     }
     .nav-1{
         border-radius: 0;

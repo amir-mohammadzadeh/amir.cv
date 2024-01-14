@@ -1,8 +1,10 @@
 import './Navigation.css'
-import { HomeIcon, EducationIcon, FilesInterfaceIcon, ContactMe, SunIcon, DownloadIcon, MoonIcon } from '../../assets/Icons';
+import { HomeIcon, EducationIcon, FilesInterfaceIcon, ContactMe, DownloadIcon } from '../../assets/Icons';
 import { NavLink } from 'react-router-dom';
+import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
+import ToggleContent from '../ToggleContent/ToggleContent';
 
-const Navigation = ({ theme, setTheme }) => {
+const Navigation = () => {
 
   const activeLinkHandle = (link) => {
     return link.isActive ? 'navbar-icon link-active' : 'navbar-icon'
@@ -11,6 +13,7 @@ const Navigation = ({ theme, setTheme }) => {
   return (
     <nav className="navbar ">
       <div className="navbar-container">
+
         <div className="nav-1">
           <NavLink to='/' className={link => activeLinkHandle(link)} >
             <HomeIcon />
@@ -18,25 +21,33 @@ const Navigation = ({ theme, setTheme }) => {
               صفحه اصلی
             </span>
           </NavLink>
+
           <NavLink to='/education' className={link => activeLinkHandle(link)}  >
             <EducationIcon />
             <div className="link-label">
               سوابق تحصیلی
             </div>
           </NavLink>
+
           <NavLink to='/portfolios' className={link => activeLinkHandle(link)}  >
             <FilesInterfaceIcon />
             <span className="link-label">
               نمونه کارها
             </span>
           </NavLink>
+
           <NavLink to='/contact-me' className={link => activeLinkHandle(link)}  >
             <ContactMe />
             <span className="link-label">
               تماس بامن
             </span>
           </NavLink>
+
+          <div className="relative hidden md:block">
+            <ToggleContent  />
+          </div>
         </div>
+        
         <div className="nav-2">
           <NavLink className='navbar-icon'  >
             <DownloadIcon />
@@ -44,10 +55,7 @@ const Navigation = ({ theme, setTheme }) => {
               دانلود رزومه
             </span>
           </NavLink>
-          <div onClick={() => setTheme(p => !p)} className='navbar-icon'  >
-            {theme ? <SunIcon /> : <MoonIcon />}
-
-          </div>
+          <ThemeSwitcher className='navbar-icon' />
         </div>
 
       </div>
