@@ -1,52 +1,15 @@
-.form-content {
+.Form_container {
     width: 62%;
     margin-inline: auto;
 }
 
-.form-content h3 {
+.Form_container h3 {
     margin-bottom: 1rem;
     font-size: 1.5rem;
     font-weight: 600;
 }
 
-.form-content form {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-top: .85rem;
-}
-
-.inputs-content {
-    display: flex;
-    flex-direction: column;
-    gap: .7rem;
-}
-
-.form-item {
-    height: 100%;
-}
-
-.form-content form button {
-    background-color: rgb(30, 64, 175);
-}
-
-.form-btn {
-    grid-column: 2 span;
-    width: 10rem;
-    line-height: 2rem;
-    border-radius: .5rem;
-    margin-inline: auto;
-    margin-block: 1rem;
-    color: white;
-}
-
-.form-content form button:hover {
-    transition: .3s;
-    background-color: rgb(9, 48, 174);
-}
-
-.contact-info {
+.contact-cards_container {
     flex-basis: 30%;
     display: flex;
     justify-content: space-between;
@@ -54,118 +17,30 @@
     width: 100%;
 }
 
-.contact-box {
-    position: relative;
-    width: 90%;
-}
-
-.box-label {
-    position: absolute;
-    top: -1.2rem;
-    right: calc(50% - 42px);
-    border-radius: 50%;
-    padding: 0.85rem 1.5rem 0 1.5rem;
-    @apply bg-gray-200 dark:bg-slate-700 xl:dark:bg-sky-700 xl:bg-gray-300 md:dark:bg-slate-700 md:dark:text-indigo-400
-}
-
-.box-value {
-    margin-block: 2rem .3rem;
-    text-align: center;
-}
-
 /*    Make them Responcive from here :)  */
 
 @media screen and (max-width: 1200px) {
-    .contact_container {
-        flex-direction: column-reverse;
-    }
-
-    .contact-info {
+    .contact-cards_container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
         row-gap: 1rem;
     }
 
-    .box-label {
-        top: 0;
-        right: 0;
-        border-radius: 0 1rem 0 100%;
-        padding: .5rem .5rem 1.25rem 1.25rem;
-
-    }
-
-    .box-value {
-        margin-block: .85rem;
-    }
-
-    .form-content {
+    .Form_container {
         width: 80%;
     }
 }
 
 
 @media screen and (max-width: 992px) {
-    .form-content {
+    .Form_container {
         width: 95%;
     }
 }
 
-
 @media screen and (max-width: 767px) {
-    .form-content form {
+    .contact-cards_container {
         grid-template-columns: 1fr;
-        gap: .5rem;
-    }
-
-    .form-content form button {
-        grid-column: unset;
-    }
-
-    .contact-info {
-        grid-template-columns: 1fr;
-
-    }
-
-    .contact-box {
-        margin-inline: auto;
-        display: flex;
-        align-items: center;
-        gap: .5rem;
-    }
-
-    .box-label {
-        position: relative;
-        padding: 0;
-    }
-
-    .box-value {
-        flex-grow: 1;
-        margin-top: .3rem;
-    }
-
-    .inputs-content {
-        gap: .4rem;
-    }
-
-    .form-item {
-        height: 10rem;
-    }
-
-    .contect-header {
-        margin-bottom: 1rem;
-        margin-inline-start: 1.5rem;
-    }
-
-    .contect-header h1 {
-        font-size: 1.3rem;
-    }
-
-}
-
-
-@media screen and (max-width: 576px) {
-    .form-btn {
-        width: 80%;
     }
 }

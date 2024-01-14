@@ -1,10 +1,8 @@
 import Widget from '../Widget/Widget'
 import Data from '../../assets/Data.json'
-import { IconTest } from '../../assets/Icons'
 import Stars from '../Stars/Stars'
 
 const Skill = () => {
-    //const items_class = 'flex justify-between flex-row-reverse items-center text-xl leading-9 duration-300 hover:bg-gray-300 dark:hover:bg-slate-600'
     return (
         <Widget className="order-3 w-full row-span-3 xl:order-4 xl:row-auto xl:col-span-full md:col-auto">
             <h3 className='text-center text-2xl font-semibold'>

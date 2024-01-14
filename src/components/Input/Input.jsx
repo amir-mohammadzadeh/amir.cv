@@ -1,8 +1,8 @@
 import './Input.css'
 
-const Input = ({ label, value, id, contentClass, onChange }) => {
+const Input = ({ label, id }) => {
     return (
-        <div className={['input-content', contentClass].join(' ')}>
+        <div className='input-content'>
             <input
                 dir='auto'
                 name={id}
@@ -11,17 +11,15 @@ const Input = ({ label, value, id, contentClass, onChange }) => {
                 className='input placeholder:text-right'
                 placeholder={label}
                 required
-                value={value}
             />
             <label htmlFor={id + '-input'} className='label'>{label}</label>
-
         </div>
     )
 }
 
-const TextArea = ({ label, value, id, contentClass, onChange }) => {
+const TextArea = ({ label, id }) => {
     return (
-        <div className={['input-content', contentClass].join(' ')}>
+        <div className='input-content ta-h'>
             <textarea
                 dir='auto'
                 name={id}
@@ -30,7 +28,6 @@ const TextArea = ({ label, value, id, contentClass, onChange }) => {
                 className='textarea placeholder:text-right h-full overflow-y-auto'
                 placeholder={label}
                 required
-                value={value}
             />
             <label htmlFor={id + '-input'} className='label'>{label}</label>
 

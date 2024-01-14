@@ -44,17 +44,17 @@ const Navigation = () => {
           </NavLink>
 
           <div className="relative hidden md:block">
-            <ToggleContent  />
+            <ToggleContent />
           </div>
         </div>
-        
+
         <div className="nav-2">
-          <NavLink className='navbar-icon'  >
+          <a href='/amir.cv/AmirMohammadzadeh_cv.pdf' download='Amir-Mohammadzadeh_CV' className='navbar-icon'  >
             <DownloadIcon />
             <span className="link-label">
               دانلود رزومه
             </span>
-          </NavLink>
+          </a>
           <ThemeSwitcher className='navbar-icon' />
         </div>
 

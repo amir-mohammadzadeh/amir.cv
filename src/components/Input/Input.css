@@ -4,6 +4,9 @@
     flex-direction: column-reverse;
     gap: .25rem;
 }
+.ta-h{
+    height: 100%;
+}
 .label{
     align-self: start;
     font-size: 1.15rem;
@@ -27,22 +30,25 @@
     transition: .3s;
 }
 
-:is(.dark .textarea),
-:is(.dark .input){
-    border-color: rgb(100, 116, 139);
-}
 .textarea:focus,
 .input:focus{
     border-color: rgba(2, 30, 120, 0.75) ;
+}
+
+:is(.dark .textarea),
+:is(.dark .input){
+    border-color: rgb(100, 116, 139);
 }
 :is(.dark .textarea:focus),
 :is(.dark .input:focus){
     border-color: rgba(120, 185, 185, 0.85) ;
 }
+
 .textarea:valid ~ .label,
 .input:valid ~ .label{
     animation: .3s show-label both;
 }
+
 @keyframes show-label {
     50%{
         transform: translateY(-1rem);
@@ -54,11 +60,15 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .textarea,.input{
         font-size: 1rem;
+        padding: .5rem;
     }
     .label{
         font-size: 1rem;
+    }
+    .ta-h{
+        height: 10rem;
     }
 }
