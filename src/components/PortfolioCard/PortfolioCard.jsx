@@ -37,7 +37,7 @@ const PortfolioCard = ({ n, title, languages, discription, linke, sorscode,image
                         {discription}
                     </p>
                     <button className='Dis_close' onClick={() => setOpenDiscription(false)}>
-                        Back
+                        بازگشت
                     </button>
                 </div>
             }
