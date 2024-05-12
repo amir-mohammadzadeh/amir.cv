@@ -24,7 +24,7 @@ const Records = () => {
                     years={item.years} />
                 </li>
                 {Records.education.indexOf(item) != Records.education.length - 1 &&
-                  <hr className='border border-red-500 dark:border-yellow-400 ' />
+                  <hr key={item.id+.5} className='border border-red-500 dark:border-yellow-400 ' />
                 }
               </>
             )}
