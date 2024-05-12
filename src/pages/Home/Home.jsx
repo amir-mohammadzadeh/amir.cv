@@ -9,7 +9,7 @@ const Home = () => {
 
         <div dir='rtl' className="Home_container">
             <div className="Image_content">
-                <img src="/prof.jpg" alt="Profile Image" />
+                <img src="amir.cv/prof.jpg" alt="Profile Image" />
             </div>
             <Detailes />
             <Skill />

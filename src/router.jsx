@@ -29,5 +29,5 @@ const router = createBrowserRouter([
         ]
     },
 
-])
+],{basename:'/amir.cv'})
 export default router
