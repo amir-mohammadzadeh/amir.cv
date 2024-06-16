@@ -29,7 +29,11 @@ const Portfolio = () => {
                     }
                 }
             >
-                {Portfolios_List.reverse().map(item => <SwiperSlide key={item.id}>    <PortfolioCard {...item} />    </SwiperSlide>)}
+                {Portfolios_List.reverse().map(item =>
+                    <SwiperSlide key={item.id}>
+                        <PortfolioCard {...item} />
+                    </SwiperSlide>
+                )}
 
                 <div className="slider-controler md:hidden">
                     <div className="swiper-button-prev dark:text-yellow-300">

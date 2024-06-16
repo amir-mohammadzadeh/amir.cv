@@ -1,15 +1,28 @@
 import './PortfolioCard.css'
-import { DiscriptionIcon, SourceCodeIcon } from '../../assets/Icons'
+import { CaretLeft, DiscriptionIcon, SourceCodeIcon } from '../../assets/Icons'
 import React, { useState } from 'react'
 
-const PortfolioCard = ({ title, languages, discription, linke, sorscode,image }) => {
-
+const PortfolioCard = ({ title, languages, discription, linke, sorscode, image }) => {
+    const [currentImage, setCurrentImage] = useState(image[0])
     const [openDiscription, setOpenDiscription] = useState(false)
+    const changImage = () => {
+        const idx = image.indexOf(currentImage)
+        idx == image.length - 1 ?
+            setCurrentImage(image[0])
+            : setCurrentImage(image[idx + 1])
+    }
     return (
         <div className="Card_content">
             <div className="Portfolio_image">
-                <img src={`./portfolios_image/${image}`} loading='ert' alt="" />
+                <img src={`./portfolios_image/${currentImage}`} loading='ert' alt="" />
+                {image.length > 1 &&
+                    <div className="next-img" onClick={changImage} title='تصویر بعدی'>
+                        <CaretLeft />
+                    </div>
+                }
+
             </div>
+
             <div className="Portfolio-details">
                 <h3>
                     {title}
@@ -23,13 +36,17 @@ const PortfolioCard = ({ title, languages, discription, linke, sorscode,image })
                     <DiscriptionIcon size='25' className='text-gray-600 dark:text-slate-300' />
                     توضیحات
                 </button>
-                <a className='pc-btn-2 dark:text-green-400 sm:dark:text-white' href={linke} target='_blank'>
-                    نمایش
-                </a>
-                <a className='pc-btn-3 dark:text-green-100' href={sorscode} target='_blank'>
-                    <SourceCodeIcon size='28' />
-                    <label> سورس کد </label>
-                </a>
+                {linke != '' &&
+                    <a className='pc-btn-2 dark:text-green-400 sm:dark:text-white' href={linke} target='_blank'>
+                        نمایش
+                    </a>
+                }
+                {sorscode != '' &&
+                    <a className='pc-btn-3 dark:text-green-100' href={sorscode} target='_blank'>
+                        <SourceCodeIcon size='28' />
+                        <label> سورس کد </label>
+                    </a>
+                }
             </div>
             {openDiscription &&
                 <div className="Dis_content">
